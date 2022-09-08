@@ -1,0 +1,22 @@
+table {
+    margin-top: 5%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type='button'] {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: beige;
+    font-size: 24px;
+    font-weight: bolder;
+    border: 3px solid black;
+    border-radius: 10%;
+}
+input[type='text'] {
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    border: 5px double beige;
+    border-radius: 10%;
+}

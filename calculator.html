@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple calculator</title>
+
+</head>
+<body>
+    <table id="simple-calc" onkeypress="displayResult(event)">
+        <tr>
+            <!-- Input from user -->
+           <td colspan="3">
+                <input type="text" id="result">
+           </td> 
+           <!-- clear function -->
+           <td>
+                <input type="button" value="clear" onclick="clr()">
+           </td>
+        </tr>
+        <tr>
+            <!-- 1 -->
+            <td>
+                <input type="button" value="1" onclick="printVal('1')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 2 -->
+            <td>
+                <input type="button" value="2" onclick="printVal('2')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 3 -->
+            <td>
+                <input type="button" value="3" onclick="printVal('3')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- / -->
+            <td>
+                <input type="button" value="/" onclick="printVal('/')" onkeypress="realTimeTyping(event)">
+            </td>
+        </tr>
+        <tr>
+            <!-- 4 -->
+            <td>
+                <input type="button" value="4" onclick="printVal('4')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 5 -->
+            <td>
+                <input type="button" value="5" onclick="printVal('5')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 6 -->
+            <td>
+                <input type="button" value="6" onclick="printVal('6')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- * -->
+            <td>
+                <input type="button" value="*" onclick="printVal('*')" onkeypress="realTimeTyping(event)">
+            </td>
+        </tr>
+        <tr>
+            <!-- 7 -->
+            <td>
+                <input type="button" value="7" onclick="printVal('7')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 8 -->
+            <td>
+                <input type="button" value="8" onclick="printVal('8')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- 9 -->
+            <td>
+                <input type="button" value="9" onclick="printVal('9')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- - -->
+            <td>
+                <input type="button" value="-" onclick="printVal('-')" onkeypress="realTimeTyping(event)">
+            </td>
+        </tr>
+        <tr>
+            <!-- 0 -->
+            <td>
+                <input type="button" value="0" onclick="printVal('0')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- . -->
+            <td>
+                <input type="button" value="." onclick="printVal('.')" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- = -->
+            <td>
+                <input type="button" value="=" onclick="solve()" onkeypress="realTimeTyping(event)">
+            </td>
+            <!-- + -->
+            <td>
+                <input type="button" value="+" onclick="printVal('+')" onkeypress="realTimeTyping(event)">
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
